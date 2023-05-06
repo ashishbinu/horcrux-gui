@@ -1,6 +1,8 @@
 import ElectronVersions from "./components/ElectronVersions";
 import ReactiveCounter from "./components/ReactiveCounter";
 import ReactiveHash from "./components/ReactiveHash";
+import SplitFile from "./components/SplitFile";
+import BindFile from "./components/BindFile";
 import ViteLogo from "../assets/logo.svg";
 import ReactLogo from "../assets/react.svg";
 
@@ -9,17 +11,9 @@ const APP_VERSION = import.meta.env.VITE_APP_VERSION;
 const App = () => {
   return (
     <>
-      <img
-        alt="Vite logo"
-        src={ViteLogo}
-        width="150"
-      />
-
-      <img
-        alt="React logo"
-        src={ReactLogo}
-        width="150"
-      />
+      <SplitFile />
+      <br />
+      <BindFile />
 
       <p>
         {/* Example how to inject current app version to UI */}
